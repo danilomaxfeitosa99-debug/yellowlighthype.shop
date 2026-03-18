@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ízvilág — Gasztronómia & Életmód</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Figtree',sans-serif;background:#1a1410;color:#e8ddd0;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+/* HEADER COMPACTO — 1 LINHA, DARK MOODY */
+header{max-width:580px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid rgba(200,175,140,.15)}
+.logo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#d4a853;letter-spacing:-.3px}
+.logo span{font-weight:400;font-style:italic;color:#a89070;font-size:12px;margin-left:4px}
+.hdr-nav{display:flex;gap:14px;font-size:9px;text-transform:uppercase;letter-spacing:1.2px;color:#8a7a66}
+.hdr-nav a{text-decoration:none;transition:color .2s}
+.hdr-nav a:hover{color:#d4a853}
+
+.wrap{max-width:540px;margin:0 auto;padding:18px 20px 50px}
+
+/* CATEGORY TAG */
+.tag{display:inline-block;font-size:8px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#1a1410;background:#d4a853;padding:3px 10px;border-radius:2px;margin-bottom:10px}
+
+h1{font-family:'Playfair Display',serif;font-size:24px;line-height:1.28;color:#f5efe6;margin-bottom:6px;font-weight:400}
+h1 em{font-style:italic;color:#d4a853}
+
+.deck{font-size:14px;color:#a89070;margin-bottom:4px;font-weight:300;line-height:1.5}
+.meta{font-size:9px;color:#6b5e4e;margin-bottom:14px;letter-spacing:.3px}
+
+/* HERO — MOODY */
+.hero{overflow:hidden;border-radius:3px;margin-bottom:3px;position:relative}
+.hero img,.mid img{cursor:pointer;transition:opacity .3s}
+.hero img:hover,.mid img:hover{opacity:.88}
+.cap{font-size:8px;color:#5a4d3e;margin-bottom:16px;font-style:italic}
+
+/* CTA — DARK GLASS ELEGANTE */
+.cta{text-align:center;margin:16px 0;padding:16px 14px;background:rgba(212,168,83,.06);border:1px solid rgba(212,168,83,.2);border-radius:5px;backdrop-filter:blur(4px)}
+.cta-h{font-family:'Playfair Display',serif;font-size:14px;color:#f5efe6;margin-bottom:4px;font-weight:400}
+.cta-p{font-size:11px;color:#a89070;margin-bottom:8px;font-weight:300}
+.cta-btn{display:inline-block;background:#d4a853;color:#1a1410;padding:10px 28px;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all .25s}
+.cta-btn:hover{background:#c49843;transform:translateY(-1px);box-shadow:0 4px 16px rgba(212,168,83,.25)}
+.cta-sub{font-size:8px;color:#6b5e4e;margin-top:5px}
+
+/* BODY TEXT */
+.body p{margin-bottom:12px;font-weight:300;font-size:14.5px;color:#c8baa8}
+.body strong{color:#f5efe6;font-weight:500}
+
+.mid{margin:16px 0;border-radius:3px;overflow:hidden}
+
+/* PULL QUOTE — MOODY GOLD */
+.pq{margin:16px 0;padding:12px 16px;border-left:2px solid #d4a853;font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:#e8ddd0;line-height:1.5;background:rgba(212,168,83,.04);border-radius:0 4px 4px 0}
+.pq cite{font-family:'Figtree',sans-serif;font-size:9px;color:#8a7a66;font-style:normal;display:block;margin-top:4px}
+
+/* DIVIDER */
+.div{width:40px;height:1px;background:rgba(212,168,83,.3);margin:18px auto}
+
+.disc{font-size:9px;color:#5a4d3e;margin-top:18px;padding-top:12px;border-top:1px solid rgba(200,175,140,.1);line-height:1.6}
+
+footer{max-width:580px;margin:0 auto;padding:16px 20px;text-align:center;font-size:8px;color:#5a4d3e;border-top:1px solid rgba(200,175,140,.1)}
+footer a{color:#d4a853;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+@media(max-width:600px){h1{font-size:21px}.wrap{padding:14px 16px 40px}header{padding:8px 16px}.hdr-nav{gap:10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Ízvilág <span>Gasztro</span></div>
+<nav class="hdr-nav">
+<a href="#">Receptek</a>
+<a href="#">Egészség</a>
+<a href="#">Életmód</a>
+</nav>
+</header>
+
+<div class="wrap">
+
+<span class="tag">Felfedezés</span>
+
+<h1>A Nagyvásárcsarnok kedvenc gyümölcse: miért <em>gondolják újra</em> a banánt a magyar szakértők?</h1>
+<p class="deck">Egy egyszerű reggeli szokás, amely egyre több figyelmet kap a táplálkozástudomány világában.</p>
+<p class="meta"><span id="art-date"></span> · Ízvilág Szerkesztőség · 3 perc olvasás</p>
+
+<figure class="hero">
+<a href="https://lp.yellowlighthype.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/presell20-banana-gourmet-art-bcWHfduTyjLfPd9Jb42YWq.webp" alt="Banán gourmet tálalás"></a>
+</figure>
+<p class="cap">Fotó: Ízvilág / Gasztronómia rovat</p>
+
+<!-- CTA 1 — IMEDIATO -->
+<div class="cta">
+<p class="cta-h">Nézd meg a szakértők videóját</p>
+<p class="cta-p">Egy rövid bemutató a módszer részleteiről</p>
+<a href="https://lp.yellowlighthype.shop/preclick" class="cta-btn">Videó megtekintése →</a>
+<p class="cta-sub">Ingyenes tájékoztató tartalom</p>
+</div>
+
+<div class="body">
+
+<p>A <strong>banán</strong> Magyarország egyik legkedveltebb gyümölcse — a Nagyvásárcsarnok standjaiban éppúgy megtalálható, mint a legmodernebb smoothie-bárokban. Mostanában azonban egy különleges tulajdonsága kerül a figyelem középpontjába.</p>
+
+<figure class="mid">
+<a href="https://lp.yellowlighthype.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/presell20-woman-farmers-market-LLG4tcRB5hwg2p6Hxmpmi2.webp" alt="Nő a Nagyvásárcsarnokban"></a>
+</figure>
+
+<p>A kutatók a banánban található <strong>rezisztens keményítőre</strong> figyeltek fel, amely prebiotikus rostként működhet az emésztőrendszerben. Ez a természetes összetevő az érdeklődés középpontjába került a táplálkozástudomány területén.</p>
+
+<div class="pq">
+„Az emberek egyre tudatosabban keresik a természetes megoldásokat — és néha a legegyszerűbb élelmiszerekben találják meg a választ."
+<cite>— Táplálkozástudományi Szakértő</cite>
+</div>
+
+<p>A módszer részleteit egy <strong>rövid videóban</strong> foglalták össze, amelyben szakértők ismertetik a tudományos hátteret és a gyakorlati alkalmazás lehetőségeit.</p>
+
+<div class="div"></div>
+
+<!-- CTA 2 -->
+<div class="cta">
+<p class="cta-h">Ismerd meg a teljes módszert</p>
+<p class="cta-p">Szakértők lépésről lépésre bemutatják</p>
+<a href="https://lp.yellowlighthype.shop/preclick" class="cta-btn">Megnézem →</a>
+<p class="cta-sub">Tájékoztató jellegű tartalom</p>
+</div>
+
+<p class="disc"><em><strong>Fontos:</strong> Ez a cikk kizárólag tájékoztató jellegű, és nem minősül orvosi tanácsadásnak. Az étrend-kiegészítők nem helyettesítik a változatos étrendet és az egészséges életmódot. Az egyéni eredmények változhatnak. Bármilyen étrendi változtatás előtt konzultáljon orvosával.</em></p>
+
+</div>
+</div>
+
+<footer>
+<p><a href="privacy.html">Adatvédelem</a> · <a href="terms.html">Feltételek</a></p>
+<p style="margin-top:3px">© 2026 Ízvilág · CNPJ: 05.739.335/0003-01</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){var d=new Date(),m=['január','február','március','április','május','június','július','augusztus','szeptember','október','november','december'];document.getElementById('art-date').textContent=d.getFullYear()+'. '+m[d.getMonth()]+' '+d.getDate()+'.';});
+(function(){var q=window.location.search;if(!q)return;document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.startsWith('#')||h.startsWith('mailto:'))return;a.setAttribute('href',h.includes('?')?h+'&'+q.substring(1):h+q)})})();
+</script>
+<script type="text/javascript" src="https://lp.yellowlighthype.shop/pretrack.js?rtkcmpid=69baa649500aa214ff50a835"></script>
+</body>
+</html>
